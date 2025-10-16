@@ -6,8 +6,8 @@ def print_hello():
 
 with DAG(
     dag_id='new_dag',
-    start_date=datetime(2025,1,1,UTC)
-    schedule=None
-    catchup=False
+    start_date=datetime(2025,1,1,UTC),
+    schedule=None,
+    catchup=False,
  ) as dag:
   hello_task = PythonOperator(task_id="Print_hello_task",python_callable=print_hello)
