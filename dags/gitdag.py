@@ -23,8 +23,7 @@ bash_command='echo "Hello from Astro Cloud deployment!"',
 )
 
 goodbye_task = BashOperator(
-
-task_id='print_goodbye',
+    task_id='print_goodbye',
 bash_command='echo "Goodbye from Astro Cloud deployment!"',
 )
 
