@@ -62,7 +62,7 @@ wait_for_file = S3KeySensor(
 
 
    poke_interval=60, # How often to check the S3 bucket (in seconds)
-   timeout=600, # How long to wait before giving up (in seconds)
+   #timeout=600, # How long to wait before giving up (in seconds)
    mode='poke', # This mode will keep checking until the file is found
    dag=dag,
 )
